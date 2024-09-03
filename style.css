@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    height: 1200px;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0, 0,0,0.8)) ,   url(bg.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+}
+.heador{
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+    height: 80px;
+
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+.logo:hover{
+    color: #ff6a6a;
+}
+.menu{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center; 
+}
+.menu li{
+    width: 25%;
+    text-align: center;
+    color: white;
+}
+.menu li a{
+    color: white;
+    transition: 0.3s;
+}
+.menu li a:hover{
+    color: #ff6a6a;
+}
+.main{
+    height: 800px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+.main h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.main h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.main p{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.main button{
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.main button:hover{
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 150px;
+    transition: 0.3s;
+}
