@@ -20,7 +20,8 @@ li{
 }
 .heador{
     height: 100px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
@@ -74,6 +75,7 @@ li{
 .main p{
     font-size: 30px;
     margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 .main button{
     font-size: 30px;
@@ -153,13 +155,12 @@ li{
     width: 1200px;
     height: 500px;
     margin: 0 auto;
-    margin-top: 100px;
     padding-top: 100px;
   
   }
   .skills h2{
     font-size: 30px;
-    color: #ff6a6a;
+    color: #6667AB;
   }
   .skills h1{
     font-size: 50px;
@@ -194,13 +195,13 @@ li{
     font-size: 20px;
   }
   .skills i{
-    color: #ff6a6a;
+    color: #6667AB;
   }
   .fa-keyboard{
     font-size: 50px;
   }
   .skills .contents li:hover{
-    background-color: #ff6a6a;
+    background-color: #6667AB;
     color: white;
     transform: scale(1.1);
   }
@@ -214,3 +215,67 @@ li{
     background-size: cover;
     background-attachment: fixed;
   }
+
+.projects{
+    height: 1200px;
+}
+.contact{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.contact h2{
+    font-size: 30px;
+    color: #6667AB;
+}
+.contact h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.contact .Contents{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+.contact .left{
+    width: 400px;
+    height: 600px;
+}
+.contact .right{
+    width: 800px;
+    height: 600px;
+    border-left: 2px dashed #ccc;
+    padding-left: 50px;
+}
+.info li{
+    width: 350px;
+    height: 80px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.contact .right p{
+    font-size: 25px;
+}
+.contact .right input{
+    width: 500px;
+    height: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+.contact .right textarea{
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+.contact .right button{
+    width: 500px;
+    height: 50px;
+    background-color: #6667AB;
+    color: white;
+}
