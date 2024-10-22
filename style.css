@@ -3,7 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
-a{
+body{
+    background-color: #001F3F;
+}
+.fa-solid{
+    color: white    ;
+}
+.menuSide{
+    position: fixed;
+    right: 0;
+    top: 150PX;
+    height: 600px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: rgba(102, 103, 171, 0.7);
+    transition: 0.3s;
+}
+.menuSide a{
+    color: white;
+    text-decoration: none;
+}
+.menuSide h3{
+    margin-top: 10px;
+}
+.menuSide ul{
+    text-align: center;
+    height: 100%;
+    color: white;
+}
+.menuSide li:hover{
+    transform: scale(1.1);
+    background-color: rgba(102, 103, 171, 1);
+}
+.menuSide li{
+    border: 1px solid black;
+    height: 25%;
+    transition: 0.3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+.menu a{
     text-decoration: none;
     display: block;
     color: black;
@@ -17,15 +57,22 @@ li{
     background:linear-gradient(rgba(0,0,0,0.8), rgba(0, 0,0,0.8)) ,   url(bg.jpg) no-repeat;
     background-size: cover;
     color: white;
+    overflow: visible;
 }
 .heador{
     height: 100px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
+    background-color: rgba(102, 103, 171, 0.5);
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    position: sticky;
+    z-index: 10000000;
+    top: 0;
+
 }
 .logo{
     width: 200px;
@@ -67,15 +114,32 @@ li{
 .main h1{
     font-size: 50px;
     margin-bottom: 50px;
+    
 }
 .main h2{
     font-size: 40px;
     margin-bottom: 30px;
+    
+}
+.main h1, .main h2{
+    text-shadow: 
+    0 0 5px #6667AB, 
+    0 0 10px #6667AB, 
+    0 0 15px #6667AB, 
+    0 0 20px #6667AB, 
+    0 0 25px #6667AB,
+    0 0 30px #6667AB,
+    0 0 35px #6667AB,
+    0 0 40px #6667AB,
+    0 0 45px #6667AB;
 }
 .main p{
     font-size: 30px;
     margin-bottom: 50px;
     margin-bottom: 150px;
+    text-shadow: 
+    0 0 5px #FFC107, 
+    0 0 10px #FFC107;
 }
 .main button{
     font-size: 30px;
@@ -100,13 +164,19 @@ li{
     height: 800px;
     margin: 0 auto;
     margin-top: 200px;
+    color: #FFFFFF;
 }
 .about h2 {
     font-size: 30px;
     color: #6667AB;
+    text-shadow: 
+    0 0 5px #FFFFFF, 
+    0 0 10px #FFFFFF, 
+    0 0 15px #FFFFFF;
 }
 .about h1 {
     font-size: 50px;
+    color: #FFFFFF;
 }
 .about .contents{
     width: 100%;
@@ -211,7 +281,7 @@ li{
   .bg{
     width: 100%;
     height: 800px;
-    background: url(bg2.jpg) no-repeat;
+    background: url(bg.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -224,10 +294,15 @@ li{
     height: 800px;
     margin: 0 auto;
     margin-top: 100px;
+    color: #ffffff;
 }
 .contact h2{
     font-size: 30px;
     color: #6667AB;
+    text-shadow: 
+    0 0 5px #ffffff, 
+    0 0 10px #ffffff, 
+    0 0 15px #ffffff;
 }
 .contact h1{
     font-size: 50px;
@@ -261,6 +336,7 @@ li{
 
 .contact .right p{
     font-size: 25px;
+    color: #ffffff;
 }
 .contact .right input{
     width: 500px;

@@ -8,22 +8,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <div class="menuSide" id="menuSide">
+    <ul class="menuside">
+      <li><a href="#about"><h3>About <br><i class="fa-solid fa-user" style="font-size: 50px; margin: 30px;"></i></h3></a></li>
+      <li><a href="#skills"><h3>Skills <br><i class="fa-solid fa-computer" style="font-size: 50px; margin: 30px;"></i></h3></a></li>
+      <li><a href="#projects"><h3>Projects <br><i class="fa-solid fa-file" style="font-size: 50px; margin: 30px;"></i></h3></a></li>
+      <li><a href="#contact"><h3>Contact <br> <i class="fa-solid fa-phone" style="font-size: 50px; margin: 30px;"></i></h3></a></li>
+  </ul>
+  </div>
     <div class="container">
         <div class="heador">
             <div class="logo">
                 KJH
             </div>
             <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><h3>About</h3></a></li>
+                <li><a href="#skills"><h3>Skills</h3></a></li>
+                <li><a href="#projects"><h3>Projects</h3></a></li>
+                <li><a href="#contact"><h3>Contact</h3></a></li>
             </ul>
         </div>
         <div class="main">
             <h1>Welcome My Homepage</h1>
-            <h2>I'M A Web Developer</h2>
-            <p>sdasdasfagfhbiefbpzdfbhpsgbhseg <br>bdsgbsdifgibsetjhbpfebetasjp9bjfdbhersa <br>tbdfhbesfhbp9dzfbjzdpf8heapbepbohzbfvzdvhsprawdchvr9</p>
+            <h2>I'M A Developer</h2>
+            <p>I Made Game <br>I Made Web <br>I Made Program</p>
             <button>Download CV</button>
         </div>
 
@@ -38,10 +46,12 @@
             <div class="right">
                 <h3>Hello, I'm KJH</h3>
                 <ul>
-                    <li><b>I'm Web Publisher And Web Front-End Developer</b></li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quis voluptate repellat voluptates ducimus ratione? Aperiam esse culpa incidunt quos, perferendis a voluptatem sit consequuntur nemo illo numquam corporis laudantium!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quis voluptate repellat voluptates ducimus ratione? Aperiam esse culpa incidunt quos, perferendis a voluptatem sit consequuntur nemo illo numquam corporis laudantium!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quis voluptate repellat voluptates ducimus ratione? Aperiam esse culpa incidunt quos, perferendis a voluptatem sit consequuntur nemo illo numquam corporis laudantium!</li>
+                    <li><b>I am a game developer.</b></li>
+                    <li>I create games. I strive to build imagined worlds, learning, studying, and growing in the process.</li><br>
+                    <li><b>I am a web developer.</b></li>
+                    <li>I develop websites. I visualize designs in my mind and adjust them as I apply and develop them to meet their intended purpose</li><br>
+                    <li><b>I am a developer.</b></li>
+                    <li>I continuously learn new technologies, striving to keep up in the era of the Fourth Industrial Revolution.</li><br>
                     <li><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-github"></i><i class="fa-brands fa-facebook"></i></li>
                 </ul>
             </div>
@@ -143,5 +153,21 @@
           </div>
         </div>
       </div>
+
+
+      <script>
+        window.addEventListener('scroll', function() {
+            const menuSide = document.getElementById('menuSide');
+            const mainSection = document.querySelector('.main');
+            const mainSectionTop = mainSection.getBoundingClientRect().top;
+        
+            // 메인 섹션에 도달했을 때 사이드바 숨기기
+            if (mainSectionTop >= 0 && mainSectionTop < window.innerHeight) {
+                menuSide.style.display = 'none'; // 메인 섹션일 때 숨김
+            } else {
+                menuSide.style.display = 'block'; // 그 외에는 보임
+            }
+        });
+        </script>
 </body>
 </html>
